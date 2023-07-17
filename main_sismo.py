@@ -3,7 +3,7 @@ from pydantic import BaseModel
 import joblib
 import numpy as np
 
-
+#https://sismo-henry.streamlit.app/
 
 def clasificar_sismo(Magnitud: float, Intensidad: float ):
     # Carga del modelo entrenado
