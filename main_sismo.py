@@ -65,6 +65,7 @@ def clasificar_sismo(Magnitud: float, Intensidad: float ):
 
     return { "texto": texto}
 
+
 def main():
     st.title("Aplicación de multiplicación")
     
