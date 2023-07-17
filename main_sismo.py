@@ -68,42 +68,6 @@ def clasificar_sismo(Magnitud: float, Intensidad: float ):
     return { "texto": texto}
 
 
-def main():
-    # Cargar la imagen de fondo
-    image_path = os.path.join(os.path.dirname(__file__), "imagen.avif")
-    with open(image_path, "rb") as file:
-        image_data = file.read()
-
-    # Convertir la imagen en base64
-    image_base64 = base64.b64encode(image_data).decode("utf-8")
-    
-    # Establecer el estilo de la página con CSS personalizado
-    page_bg_img = f'''
-        <style>
-        body {{
-            background-image: url(data:image/avif;base64,{image_base64});
-            background-size: cover;
-        }}
-        </style>
-    '''
-
-    st.title("Aplicación de multiplicación")
-
-    # Agregar el CSS personalizado a la página
-    st.markdown(page_bg_img, unsafe_allow_html=True)
-
-    Magnitud = st.number_input("Ingrese La Magnitud", value=0.0)
-    Intensidad = st.number_input("Ingrese La Intensidad", value=0.0)
-
-    if st.button("clasificar"):
-        resultado = clasificar_sismo(Magnitud, Intensidad)
-        st.success(f"El resultado de la multiplicación es: {resultado}")
-
-if __name__ == '__main__':
-    main()
-
-"""
-
 
 
 def main():
@@ -119,4 +83,4 @@ def main():
 if __name__ == '__main__':
     main()
     
-"""
+
