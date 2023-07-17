@@ -75,5 +75,16 @@ def clasificar_sismo(Magnitud: float, Intensidad: float ):
 
     return { "texto": texto}
 
-print(clasificar_sismo(7.5, 5.0))
+def main():
+    st.title("Aplicación de multiplicación")
+    
+    Magnitud = st.number_input("Ingrese La Magnitud", value=0.0)
+    Intensidad = st.number_input("Ingrese La Intensidad", value=0.0)
+    
+    if st.button("Multiplicar"):
+        resultado = clasificar_sismo(Magnitud, Intensidad )
+        st.success(f"El resultado de la multiplicación es: {resultado}")
+
+if __name__ == '__main__':
+    main()
     
