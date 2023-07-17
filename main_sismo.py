@@ -99,9 +99,11 @@ def main():
         resultado = clasificar_sismo(Magnitud, Intensidad)
         st.success(f"El resultado de la multiplicación es: {resultado}")
 
-"""
 if __name__ == '__main__':
     main()
+
+"""
+
 
 
 def main():
