@@ -1,7 +1,8 @@
-from fastapi import FastAPI
 from pydantic import BaseModel
 import joblib
 import numpy as np
+import streamlit as st
+
 
 # Definición de la clase de entrada para los parámetros
 class SismoInput(BaseModel):
@@ -11,15 +12,12 @@ class SismoInput(BaseModel):
 # Carga del modelo entrenado
 model = joblib.load("kmeans_model.pkl")
 
-# Creación de la aplicación FastAPI
-app = FastAPI()
 
 
-@app.post("/clasificar_sismo")
-def clasificar_sismo(sismo: SismoInput):
+
+def clasificar_sismo(Magnitud: float, Intensidad: float ):
     # Obtener los valores de magnitud e intensidad
-    Magnitud = sismo.Magnitud
-    Intensidad = sismo.Intensidad
+    
 
     # Realizar la clasificación utilizando el modelo entrenado
     clasificacion = model.predict([[Magnitud, Intensidad]])
@@ -75,4 +73,17 @@ def clasificar_sismo(sismo: SismoInput):
         texto = f"{clasificacion}"
 
     return { "texto": texto}
+
+def main():
+    st.title("Aplicación de multiplicación")
+    
+    Magnitud = st.number_input("Ingrese La Magnitud", value=0.0)
+    Intensidad = st.number_input("Ingrese La Intensidad", value=0.0)
+    
+    if st.button("Multiplicar"):
+        resultado = clasificar_sismo(Magnitud, Intensidad )
+        st.success(f"El resultado de la multiplicación es: {resultado}")
+
+if __name__ == '__main__':
+    main()
     
