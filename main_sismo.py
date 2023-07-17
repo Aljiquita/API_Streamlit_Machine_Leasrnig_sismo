@@ -1,7 +1,8 @@
+import streamlit as st
 from pydantic import BaseModel
 import joblib
 import numpy as np
-import streamlit as st
+
 
 
 # Definición de la clase de entrada para los parámetros
