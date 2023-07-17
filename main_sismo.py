@@ -5,19 +5,9 @@ import numpy as np
 
 
 
-# Definición de la clase de entrada para los parámetros
-class SismoInput(BaseModel):
-    Magnitud: float
-    Intensidad: float
-
-# Carga del modelo entrenado
-model = joblib.load("kmeans_model.pkl")
-
-
-
-
 def clasificar_sismo(Magnitud: float, Intensidad: float ):
-    # Obtener los valores de magnitud e intensidad
+    # Carga del modelo entrenado
+    model = joblib.load("kmeans_model.pkl")
     
 
     # Realizar la clasificación utilizando el modelo entrenado
