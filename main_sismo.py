@@ -72,7 +72,7 @@ def main():
     Magnitud = st.number_input("Ingrese La Magnitud", value=0.0)
     Intensidad = st.number_input("Ingrese La Intensidad", value=0.0)
     
-    if st.button("Multiplicar"):
+    if st.button("clasificar"):
         resultado = clasificar_sismo(Magnitud, Intensidad )
         st.success(f"El resultado de la multiplicación es: {resultado}")
 
