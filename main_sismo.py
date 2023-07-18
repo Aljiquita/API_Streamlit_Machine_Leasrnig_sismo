@@ -85,20 +85,21 @@ def main():
 
     st.title("Clasificación Sismo")
 
-    # Dividir la página en columnas
+   # Dividir la página en columnas
     col1, col2 = st.columns(2)
 
     # Columna izquierda: Formulario
     with col1:
         Magnitud = st.number_input("Ingrese la magnitud:", value=0.0)
         Intensidad = st.number_input("Ingrese la intensidad:", value=0.0)
-        if st.button("Clasificar"):
+        if st.button("Clasificar formulario"):
             resultado = clasificar_sismo(Intensidad, Magnitud)
 
     # Columna derecha: Resultado
     with col2:
-        if st.button("Clasificar"):
+        if st.button("Clasificar resultado"):
             st.success(resultado["texto"])
+
 
 
 
