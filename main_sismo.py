@@ -85,10 +85,10 @@ def main():
         resultado = clasificar_sismo(Magnitud, Intensidad)
         st.success(resultado["texto"])
 
-    # Agregar los textos debajo del formulario
-    st.write("Texto 1")
-    st.write("Texto 2")
-    st.write("Texto 3")
+    col1, col2, col3 = st.columns(3)
+    col1.write("Texto 1")
+    col2.write("Texto 2")
+    col3.write("Texto 3")
 
 if __name__ == '__main__':
     main()
