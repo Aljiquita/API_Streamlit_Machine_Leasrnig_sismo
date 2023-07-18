@@ -117,7 +117,22 @@ XII. Daño total. Las estructuras se desploman y el terreno puede agrietarse y d
 """)
     st.write("")
     st.write("---------------------------------------------------------------------")
-    st.write("Texto 3")
+    st.write("""
+GAP:
+
+GAP < 30: Excelente<br>
+30 ≤ GAP < 60: Buena<br>
+60 ≤ GAP < 90: Razonable<br>
+90 ≤ GAP < 120: Pobre<br>
+GAP ≥ 120: Muy pobre<br>
+
+
+* Excelente: Cobertura angular óptima, alta precisión en la ubicación y estimación de la magnitud del terremoto.
+* Buena: Cobertura angular adecuada, buena precisión en la ubicación y estimación de la magnitud del terremoto.
+* Razonable: Cobertura angular aceptable, precisión razonable en la ubicación y estimación de la magnitud del terremoto.
+* Pobre: Cobertura angular deficiente, precisión reducida en la ubicación y estimación de la magnitud del terremoto.
+* Muy pobre: Cobertura angular muy deficiente, baja precisión en la ubicación y estimación de la magnitud del terremoto.
+""")
 
 if __name__ == '__main__':
     main()
