@@ -70,23 +70,36 @@ def clasificar_sismo(Magnitud: float, Intensidad: float ):
 
 
 
+
+
+
+
 def main():
+    # Cargar la imagen de fondo
+    image = Image.open("imagen.png")
+
+    # Establecer la imagen como fondo utilizando CSS personalizado
+    st.markdown(
+        f"""
+        <style>
+        .reportview-container {{
+            background: url(data:image/png;base64,{image}) no-repeat center center fixed;
+            background-size: cover;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
     st.title("Aplicación de clasificación de sismos")
 
-    # Dividir la pantalla en dos columnas
-    col1, col2 = st.beta_columns(2)
+    Magnitud = st.number_input("Ingrese la magnitud:", value=0.0)
+    Intensidad = st.number_input("Ingrese la intensidad:", value=0.0)
 
-    Magnitud = col1.number_input("Ingrese la magnitud:", value=0.0)
-    Intensidad = col1.number_input("Ingrese la intensidad:", value=0.0)
-
-    if col1.button("Clasificar"):
+    if st.button("Clasificar"):
         resultado = clasificar_sismo(Magnitud, Intensidad)
-        col1.success(resultado["texto"])
-
-    col2.image("imagen.png", use_column_width=True)
+        st.success(resultado["texto"])
 
 
 if __name__ == '__main__':
     main()
-
-
