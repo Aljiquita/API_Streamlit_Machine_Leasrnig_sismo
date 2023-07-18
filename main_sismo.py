@@ -1,7 +1,10 @@
+
 import streamlit as st
+from PIL import Image
 from pydantic import BaseModel
 import joblib
 import numpy as np
+
 
 #https://sismo-henry.streamlit.app/
 
@@ -69,6 +72,24 @@ def clasificar_sismo(Magnitud: float, Intensidad: float ):
 
 
 def main():
+
+    # Cargar la imagen de fondo
+    image = Image.open("imagen.png")
+
+    # Establecer la imagen como fondo utilizando CSS personalizado
+    st.markdown(
+        f"""
+        <style>
+        .reportview-container {{
+            background: url(data:image/png;base64,{image}) no-repeat center center fixed;
+            background-size: cover;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+    
     st.title("Aplicación de multiplicación")
     
     Magnitud = st.number_input("Ingrese La Magnitud", value=0.0)
