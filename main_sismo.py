@@ -86,7 +86,7 @@ def main():
     st.title("Clasificación Sismo")
 
     # Dividir la página en columnas
-    col1, col2 = st.beta_columns([1, 1])
+    col1, col2 = st.columns(2)
 
     # Columna izquierda: Formulario
     with col1:
@@ -99,6 +99,7 @@ def main():
     with col2:
         if st.button("Clasificar"):
             st.success(resultado["texto"])
+
 
 
     # Agregar los textos debajo del formulario
