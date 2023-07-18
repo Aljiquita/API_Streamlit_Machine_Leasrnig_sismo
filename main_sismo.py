@@ -82,7 +82,7 @@ def main():
     Intensidad = st.number_input("Ingrese la intensidad:", value=0.0)
 
     if st.button("Clasificar"):
-        resultado = clasificar_sismo(Magnitud, Intensidad)
+        resultado = clasificar_sismo(Intensidad, Magnitud )
         st.success(resultado["texto"])
 
     # Agregar los textos debajo del formulario
