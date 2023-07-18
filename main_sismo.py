@@ -78,9 +78,9 @@ def main():
     st.set_page_config(
         page_title="Ex-stream-ly Cool App",  # Establece el título de la página de la aplicación como "Ex-stream-ly Cool App".
         page_icon="🧊",  # Establece el icono de la página de la aplicación como un emoji de un cubito de hielo.
-        layout="centered",  # Establece el diseño de la página de la aplicación como "centered" para centrar el contenido.
+        layout="wide",  # Establece el diseño de la página de la aplicación como "wide" para ocupar todo el ancho disponible.
         initial_sidebar_state="expanded",  # Configura el estado inicial de la barra lateral como expandida.
-    )
+        )
     st.image("imagen.png", use_column_width=True)
 
     st.title("Clasificación Sismo")
@@ -89,7 +89,7 @@ def main():
     Intensidad = st.number_input("Ingrese la intensidad:", value=0.0)
 
     if st.button("Clasificar"):
-        resultado = clasificar_sismo(Intensidad, Magnitud)
+        resultado = clasificar_sismo(Intensidad, Magnitud )
         st.success(resultado["texto"])
 
     # Agregar los textos debajo del formulario
