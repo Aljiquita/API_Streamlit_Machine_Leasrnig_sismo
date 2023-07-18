@@ -73,18 +73,20 @@ def clasificar_sismo(Magnitud: float, Intensidad: float ):
 def main():
     st.title("Aplicación de clasificación de sismos")
 
-    Magnitud = st.number_input("Ingrese la magnitud:", value=0.0)
-    Intensidad = st.number_input("Ingrese la intensidad:", value=0.0)
+    # Dividir la pantalla en dos columnas
+    col1, col2 = st.beta_columns(2)
 
-    if st.button("Clasificar"):
+    Magnitud = col1.number_input("Ingrese la magnitud:", value=0.0)
+    Intensidad = col1.number_input("Ingrese la intensidad:", value=0.0)
+
+    if col1.button("Clasificar"):
         resultado = clasificar_sismo(Magnitud, Intensidad)
-        st.success(resultado["texto"])
+        col1.success(resultado["texto"])
 
-    st.image("imagen.png", use_column_width=True)
+    col2.image("imagen.png", use_column_width=True)
 
 
 if __name__ == '__main__':
     main()
-
 
 
