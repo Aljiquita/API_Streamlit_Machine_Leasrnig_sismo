@@ -94,13 +94,8 @@ def main():
         initial_sidebar_state="expanded",  # Configura el estado inicial de la barra lateral como expandida.
         )
     
-    imagen = Image.open("imagen.png")
-    nuevo_ancho = 100
-    nuevo_alto = int(imagen.size[1] * nuevo_ancho / imagen.size[0])
-    imagen_redimensionada = imagen.resize((nuevo_ancho, nuevo_alto))
-    imagen_redimensionada.save("imagen_redimensionada.png")
     
-    st.image("imagen_redimensionada", width=100, use_column_width=True)
+    st.image("imagen.png", width=100, use_column_width=True)
 
     st.title("Clasificación Sismo")
 
