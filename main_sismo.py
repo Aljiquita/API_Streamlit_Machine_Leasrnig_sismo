@@ -99,7 +99,24 @@ Menos de 2.0: Generalmente no se percibe, excepto en condiciones muy favorables.
 """)
     st.write("")
     st.write("---------------------------------------------------------------------")
-    st.write("Texto 2")
+    st.write("""
+Intensidad:
+
+I. No se siente.
+II. Se siente solo por unas pocas personas en reposo y en posición tranquila.
+III. Se siente dentro de los edificios, especialmente en los pisos superiores.
+IV. Se siente como un camión pesado que pasa cerca o como una vibración similar al paso de un tren.
+V. Se siente ampliamente en el área afectada. Los objetos colgantes pueden oscilar y se pueden escuchar ruidos.
+VI. Se siente por todas las personas. Los objetos frágiles se rompen y se pueden producir grietas en las paredes.
+VII. Daños menores en las estructuras, como grietas en los muros y caída de revestimientos.
+VIII. Daños importantes en las estructuras, como colapso parcial de edificios y chimeneas.
+IX. Daños severos en las estructuras, con colapso parcial generalizado.
+X. Daños extensos en las estructuras, con colapso de muchos edificios.
+XI. Daños de gran alcance, con colapso de la mayoría de los edificios.
+XII. Daño total. Las estructuras se desploman y el terreno puede agrietarse y deformarse.
+""")
+    st.write("")
+    st.write("---------------------------------------------------------------------")
     st.write("Texto 3")
 
 if __name__ == '__main__':
