@@ -34,15 +34,15 @@ def clasificar_sismo(Magnitud: float, Intensidad: float ):
         """
     elif clasificacion == 1:
         texto = f""" La clasificación {clasificacion}:
-        
+
         Los sismos en este rango tienen una intensidad 
         que generalmente no se percibe,
         excepto en condiciones muy favorables,
         hasta niveles que a menudo se perciben,
         pero rara vez causan daños.
-        En términos de magnitud,
-        van desde temblores que se sienten como vibraciones menores
-        hasta sismos que pueden causar daños menores en estructuras.
+        En términos de magnitud, van desde temblores
+        que se sienten como vibraciones menores, hasta sismos 
+        que pueden causar daños menores en estructuras.
         """
     elif clasificacion == 2:
         texto = f""" La clasificación  {clasificacion}:
