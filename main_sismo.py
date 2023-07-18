@@ -56,21 +56,24 @@ def clasificar_sismo(Magnitud: float, Intensidad: float ):
         cantidad de daños en áreas habitadas.
         """
     elif clasificacion == 3:
-        texto = f""" La clasificación es {clasificacion},
-        los sismos en este rango tienen una intensidad que a menudo se percibe
-        y puede causar una gran cantidad de daños en áreas habitadas,
+        texto = f""" La clasificación {clasificacion}:
+
+        los sismos en este rango tienen una intensidad que 
+        a menudo se percibe y puede causar 
+        una gran cantidad de daños en áreas habitadas,
         junto con una magnitud que va desde temblores menores
-        hasta la capacidad de causar daños significativos en estructuras.
+        hasta la capacidad de causar daños significativos 
+        en estructuras.
         """
     elif clasificacion == 4:
         texto = f""" La clasificación {clasificacion}:
         
         los sismos en este rango tienen una intensidad
-        que puede causar daños significativos en áreas más grandes
-        y una magnitud que va desde la capacidad de causar 
-        daños significativos en estructuras 
-        hasta la posibilidad de ocasionar daños extensos
-        e incluso colapso total de edificios.
+        que puede causar daños significativos en áreas 
+        más grandes y una magnitud que va desde 
+        la capacidad de causar daños significativos 
+        en estructuras, hasta la posibilidad de ocasionar
+        daños extensos e incluso colapso total de edificios.
         """
     else:
         texto = f"{clasificacion}"
