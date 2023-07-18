@@ -95,10 +95,11 @@ def main():
         )
     
     
-    # Centrar la imagen
-    image_container = st.container()
-    with image_container:
-        st.image("imagen.png", width=600, use_column_width=True)
+    st.image("imagen.png", width=600)
+
+    # Centrar y ajustar el tamaño de la imagen
+    image = st.image("imagen.png", use_column_width=True)
+    image.image_data.halign = 'center'
 
     st.title("Clasificación Sismo")
 
