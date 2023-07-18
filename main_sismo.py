@@ -41,8 +41,10 @@ def clasificar_sismo(Magnitud: float, Intensidad: float ):
         hasta sismos que pueden causar daños menores en estructuras.
         """
     elif clasificacion == 2:
-        texto = f""" La clasificación es {clasificacion},
-        los sismos en este rango tienen una intensidad que generalmente no se percibe,
+        texto = f""" La clasificación es {clasificacion}
+
+
+        Los sismos en este rango tienen una intensidad que generalmente no se percibe,
         pero que en condiciones favorables puede ser percibida por unas pocas personas en reposo
         y en posición tranquila.
         Además, la magnitud de estos sismos va desde temblores de vibración menor
@@ -76,7 +78,7 @@ def clasificar_sismo(Magnitud: float, Intensidad: float ):
 def main():
 
     st.set_page_config(
-        page_title="Ex-stream-ly Cool App",  # Establece el título de la página de la aplicación como "Ex-stream-ly Cool App".
+        page_title="PF Sismos APP Web",  # Establece el título de la página de la aplicación como "Ex-stream-ly Cool App".
         page_icon="🧊",  # Establece el icono de la página de la aplicación como un emoji de un cubito de hielo.
         layout="wide",  # Establece el diseño de la página de la aplicación como "wide" para ocupar todo el ancho disponible.
         initial_sidebar_state="expanded",  # Configura el estado inicial de la barra lateral como expandida.
