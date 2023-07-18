@@ -85,17 +85,10 @@ def main():
         resultado = clasificar_sismo(Magnitud, Intensidad)
         st.success(resultado["texto"])
 
-    col1, col2, col3 = st.columns(3)
-    col1.write(""" Magnitud: 
-                Menos de 2.0: Generalmente no se percibe, excepto en condiciones muy favorables.
-                2.0 a 3.9: A menudo se percibe, pero rara vez causa daños.
-                4.0 a 4.9: Se siente como un temblor de vibración menor, similar a la de un camión que pasa. Raramente causa daños.
-                5.0 a 5.9: Puede causar daños significativos en edificios y estructuras mal construidas en áreas pobladas.
-                6.0 a 6.9: Puede causar una gran cantidad de daños en áreas habitadas en un rango de hasta unos 160 kilómetros alrededor del epicentro.
-                7.0 a 7.9: Puede causar daños graves en áreas más grandes.
-                8.0 o superior: Un terremoto de esta magnitud puede causar daños devastadores en áreas extensas.""")
-    col2.write("Texto 2")
-    col3.write("Texto 3")
+    # Agregar los textos debajo del formulario
+    st.write("Texto 1")
+    st.write("Texto 2")
+    st.write("Texto 3")
 
 if __name__ == '__main__':
     main()
