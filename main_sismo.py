@@ -65,8 +65,9 @@ def clasificar_sismo(Magnitud: float, Intensidad: float ):
         
         los sismos en este rango tienen una intensidad
         que puede causar daños significativos en áreas más grandes
-        y una magnitud que va desde la capacidad de causar daños significativos
-        en estructuras hasta la posibilidad de ocasionar daños extensos
+        y una magnitud que va desde la capacidad de causar 
+        daños significativos en estructuras 
+        hasta la posibilidad de ocasionar daños extensos
         e incluso colapso total de edificios.
         """
     else:
