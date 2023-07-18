@@ -83,7 +83,7 @@ def main():
         )
     st.image("imagen.png", width=400)
 
-    #st.title("Clasificación Sismo")
+    st.title("Clasificación Sismo")
 
    # Dividir la página en columnas
     col1, col2 = st.columns(2)
