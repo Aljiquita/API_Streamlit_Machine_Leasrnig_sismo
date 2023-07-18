@@ -44,11 +44,13 @@ def clasificar_sismo(Magnitud: float, Intensidad: float ):
         texto = f""" La clasificación es {clasificacion}
 
 
-        Los sismos en este rango tienen una intensidad que generalmente no se percibe,
-        pero que en condiciones favorables puede ser percibida por unas pocas personas en reposo
-        y en posición tranquila.
-        Además, la magnitud de estos sismos va desde temblores de vibración menor
-        hasta la capacidad de causar una gran cantidad de daños en áreas habitadas.
+        Los sismos en este rango tienen una intensidad 
+    que generalmente no se percibe,
+    pero que en condiciones favorables puede ser percibida 
+    por unas pocas personas en reposo y en posición tranquila.
+    Además, la magnitud de estos sismos va desde temblores 
+    de vibración menor, hasta la capacidad de causar una gran
+    cantidad de daños en áreas habitadas.
         """
     elif clasificacion == 3:
         texto = f""" La clasificación es {clasificacion},
