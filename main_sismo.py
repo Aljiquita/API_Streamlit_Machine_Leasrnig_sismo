@@ -89,13 +89,13 @@ def main():
     st.write("""
 Magnitud:
 
-Menos de 2.0: Generalmente no se percibe, excepto en condiciones muy favorables.
-2.0 a 3.9: A menudo se percibe, pero rara vez causa daños.
-4.0 a 4.9: Se siente como un temblor de vibración menor, similar a la de un camión que pasa. Raramente causa daños.
-5.0 a 5.9: Puede causar daños significativos en edificios y estructuras mal construidas en áreas pobladas.
-6.0 a 6.9: Puede causar una gran cantidad de daños en áreas habitadas en un rango de hasta unos 160 kilómetros alrededor del epicentro.
-7.0 a 7.9: Puede causar daños graves en áreas más grandes.
-8.0 o superior: Un terremoto de esta magnitud puede causar daños devastadores en áreas extensas.
+* Menos de 2.0: Generalmente no se percibe, excepto en condiciones muy favorables.
+* 2.0 a 3.9: A menudo se percibe, pero rara vez causa daños.
+* 4.0 a 4.9: Se siente como un temblor de vibración menor, similar a la de un camión que pasa. Raramente causa daños.
+* 5.0 a 5.9: Puede causar daños significativos en edificios y estructuras mal construidas en áreas pobladas.
+* 6.0 a 6.9: Puede causar una gran cantidad de daños en áreas habitadas en un rango de hasta unos 160 kilómetros alrededor del epicentro.
+* 7.0 a 7.9: Puede causar daños graves en áreas más grandes.
+* 8.0 o superior: Un terremoto de esta magnitud puede causar daños devastadores en áreas extensas.
 """)
     st.write("")
     st.write("---------------------------------------------------------------------")
@@ -120,18 +120,11 @@ Intensidad:
     st.write("""
 GAP:
 
-* GAP < 30: Excelente
-* 30 ≤ GAP < 60: Buena
-* 60 ≤ GAP < 90: Razonable
-* 90 ≤ GAP < 120: Pobre
-* GAP ≥ 120: Muy pobre
-
-
-* Excelente: Cobertura angular óptima, alta precisión en la ubicación y estimación de la magnitud del terremoto.
-* Buena: Cobertura angular adecuada, buena precisión en la ubicación y estimación de la magnitud del terremoto.
-* Razonable: Cobertura angular aceptable, precisión razonable en la ubicación y estimación de la magnitud del terremoto.
-* Pobre: Cobertura angular deficiente, precisión reducida en la ubicación y estimación de la magnitud del terremoto.
-* Muy pobre: Cobertura angular muy deficiente, baja precisión en la ubicación y estimación de la magnitud del terremoto.
+* GAP < 30: Excelente => Cobertura angular óptima, alta precisión en la ubicación y estimación de la magnitud del terremoto.
+* 30 ≤ GAP < 60: Buena => Cobertura angular adecuada, buena precisión en la ubicación y estimación de la magnitud del terremoto.
+* 60 ≤ GAP < 90: Razonable => Cobertura angular aceptable, precisión razonable en la ubicación y estimación de la magnitud del terremoto.
+* 90 ≤ GAP < 120: Pobre => Cobertura angular deficiente, precisión reducida en la ubicación y estimación de la magnitud del terremoto.
+* GAP ≥ 120: Muy pobre => Cobertura angular muy deficiente, baja precisión en la ubicación y estimación de la magnitud del terremoto.
 """)
 
 if __name__ == '__main__':
