@@ -41,9 +41,7 @@ def clasificar_sismo(Magnitud: float, Intensidad: float ):
         hasta sismos que pueden causar daños menores en estructuras.
         """
     elif clasificacion == 2:
-        texto = f""" La clasificación es {clasificacion}
-
-
+        texto = f""" La clasificación  {clasificacion}:
         Los sismos en este rango tienen una intensidad 
         que generalmente no se percibe,
         pero que en condiciones favorables puede ser percibida 
