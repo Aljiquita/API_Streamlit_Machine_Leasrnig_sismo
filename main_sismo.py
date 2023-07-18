@@ -21,11 +21,13 @@ def clasificar_sismo(Magnitud: float, Intensidad: float ):
 
     # Asignar texto de acuerdo a la clasificación
     if clasificacion == 0:
-        texto = f""" La clasificación es {clasificacion},
+        texto = f""" La clasificación {clasificacion}:
+
         Los sismos en este rango tienen una intensidad perceptible
-        que va desde niveles bajos hasta niveles ampliamente perceptibles en el área afectada.
+        que va desde niveles bajos hasta niveles ampliamente perceptibles
+        en el área afectada.
         Pueden provocar daños menores en estructuras,
-        como grietas en los muros y caída de revestimientos,
+        como grietas en los muros y caída de revestimientos 
         y ser percibidos por un número variable de personas,
         desde unas pocas en reposo y en posición tranquila
         hasta todas las personas en el área afectada.
@@ -42,7 +44,7 @@ def clasificar_sismo(Magnitud: float, Intensidad: float ):
         """
     elif clasificacion == 2:
         texto = f""" La clasificación  {clasificacion}:
-        
+
         Los sismos en este rango tienen una intensidad 
         que generalmente no se percibe,
         pero que en condiciones favorables puede ser percibida 
