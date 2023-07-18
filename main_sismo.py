@@ -71,35 +71,31 @@ def clasificar_sismo(Magnitud: float, Intensidad: float ):
 
 
 
-def main():
 
+def main():
     # Cargar la imagen de fondo
     image = Image.open("imagen.png")
 
     # Establecer la imagen como fondo utilizando CSS personalizado
-    st.markdown(
-        f"""
-        <style>
-        .reportview-container {{
-            background: url(data:image/png;base64,{image}) no-repeat center center fixed;
-            background-size: cover;
-        }}
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
+    page_bg_img = '''
+    <style>
+    body {
+    background-image: url("imagen.png");
+    background-size: cover;
+    }
+    </style>
+    '''
+    st.markdown(page_bg_img, unsafe_allow_html=True)
 
-    
     st.title("Aplicación de multiplicación")
-    
+
     Magnitud = st.number_input("Ingrese La Magnitud", value=0.0)
     Intensidad = st.number_input("Ingrese La Intensidad", value=0.0)
-    
+
     if st.button("clasificar"):
-        resultado = clasificar_sismo(Magnitud, Intensidad )
+        resultado = clasificar_sismo(Magnitud, Intensidad)
         st.success(f"El resultado de la multiplicación es: {resultado}")
+
 
 if __name__ == '__main__':
     main()
-    
-
