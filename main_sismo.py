@@ -61,7 +61,8 @@ def clasificar_sismo(Magnitud: float, Intensidad: float ):
         hasta la capacidad de causar daños significativos en estructuras.
         """
     elif clasificacion == 4:
-        texto = f""" La clasificación es {clasificacion},
+        texto = f""" La clasificación {clasificacion}:
+        
         los sismos en este rango tienen una intensidad
         que puede causar daños significativos en áreas más grandes
         y una magnitud que va desde la capacidad de causar daños significativos
