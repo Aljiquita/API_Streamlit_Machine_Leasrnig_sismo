@@ -95,7 +95,7 @@ def main():
         )
     
     
-    st.image("imagen.png", width=50)
+    st.image("imagen.png", width=200)
 
     st.title("Clasificación Sismo")
 
