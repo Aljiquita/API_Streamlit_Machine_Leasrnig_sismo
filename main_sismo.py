@@ -72,6 +72,7 @@ def clasificar_sismo(Magnitud: float, Intensidad: float ):
 
 
 
+"""
 def main():
     # Cargar la imagen de fondo
     image = Image.open("imagen.png")
@@ -87,14 +88,32 @@ def main():
     '''
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
-    st.title("Aplicación de multiplicación")
+    st.title("Clasificación Sismo")
 
     Magnitud = st.number_input("Ingrese La Magnitud", value=0.0)
     Intensidad = st.number_input("Ingrese La Intensidad", value=0.0)
 
     if st.button("clasificar"):
         resultado = clasificar_sismo(Magnitud, Intensidad)
-        st.success(f"El resultado de la multiplicación es: {resultado}")
+        st.success(f"El resultado de la Clasificación  es: {resultado}")
+
+
+if __name__ == '__main__':
+    main()
+
+"""
+
+def main():
+    st.image("imagen.png", use_column_width=True)
+
+    st.title("Clasificación Sismo")
+
+    Magnitud = st.number_input("Ingrese la magnitud:", value=0.0)
+    Intensidad = st.number_input("Ingrese la intensidad:", value=0.0)
+
+    if st.button("Clasificar"):
+        resultado = clasificar_sismo(Magnitud, Intensidad)
+        st.success(resultado["texto"])
 
 
 if __name__ == '__main__':
