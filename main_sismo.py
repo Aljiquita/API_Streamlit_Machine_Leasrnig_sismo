@@ -93,7 +93,7 @@ def main():
         layout="wide",  # Establece el diseño de la página de la aplicación como "wide" para ocupar todo el ancho disponible.
         initial_sidebar_state="expanded",  # Configura el estado inicial de la barra lateral como expandida.
         )
-    st.image("imagen.png", width=200, use_column_width=True)
+    st.image("imagen.png", width=100, use_column_width=True)
 
     st.title("Clasificación Sismo")
 
