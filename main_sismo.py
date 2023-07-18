@@ -86,6 +86,8 @@ def main():
         st.success(resultado["texto"])
 
     # Agregar los textos debajo del formulario
+    st.write("")
+    st.write("---------------------------------------------------------------------")
     st.write("""
 Magnitud:
 
