@@ -33,8 +33,10 @@ def clasificar_sismo(Magnitud: float, Intensidad: float ):
         hasta todas las personas en el área afectada.
         """
     elif clasificacion == 1:
-        texto = f""" La clasificación es {clasificacion},
-        Los sismos en este rango tienen una intensidad que generalmente no se percibe,
+        texto = f""" La clasificación {clasificacion}:
+        
+        Los sismos en este rango tienen una intensidad 
+        que generalmente no se percibe,
         excepto en condiciones muy favorables,
         hasta niveles que a menudo se perciben,
         pero rara vez causan daños.
