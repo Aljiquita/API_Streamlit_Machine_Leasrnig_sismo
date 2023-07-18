@@ -5,8 +5,6 @@ from pydantic import BaseModel
 import joblib
 import numpy as np
 
-import base64
-
 
 #https://sismo-henry.streamlit.app/
 
@@ -75,26 +73,10 @@ def clasificar_sismo(Magnitud: float, Intensidad: float ):
 
 
 
-
 def main():
-    # Cargar la imagen de fondo
-    image = Image.open("imagen.png")
-    image_url = image_to_base64(image)
+    st.image("imagen.png", use_column_width=True)
 
-    # Establecer la imagen como fondo utilizando CSS personalizado
-    st.markdown(
-        f"""
-        <style>
-        .reportview-container {{
-            background: url(data:image/png;base64,{image_url}) no-repeat center center fixed;
-            background-size: cover;
-        }}
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-
-    st.title("Aplicación de clasificación de sismos")
+    st.title("Clasificación Sismo")
 
     Magnitud = st.number_input("Ingrese la magnitud:", value=0.0)
     Intensidad = st.number_input("Ingrese la intensidad:", value=0.0)
@@ -102,12 +84,6 @@ def main():
     if st.button("Clasificar"):
         resultado = clasificar_sismo(Magnitud, Intensidad)
         st.success(resultado["texto"])
-
-
-def image_to_base64(image):
-    image_bytes = image.tobytes()
-    base64_image = base64.b64encode(image_bytes).decode("utf-8")
-    return base64_image
 
 
 if __name__ == '__main__':
