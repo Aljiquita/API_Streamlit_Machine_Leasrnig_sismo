@@ -86,7 +86,7 @@ def main():
         st.success(resultado["texto"])
 
     col1, col2, col3 = st.columns(3)
-    col1.write(""" Magnitud:La escala de Richter agrupa los sismos en diferentes categorías o niveles de intensidad basados en la amplitud de las ondas sísmicas registradas en una estación sísmica específica. A continuación, se muestra una clasificación general de la escala de Richter:
+    col1.write(""" Magnitud: A continuación, se muestra una clasificación general de la escala de Richter:
 Menos de 2.0: Generalmente no se percibe, excepto en condiciones muy favorables.
 2.0 a 3.9: A menudo se percibe, pero rara vez causa daños.
 4.0 a 4.9: Se siente como un temblor de vibración menor, similar a la de un camión que pasa. Raramente causa daños.
